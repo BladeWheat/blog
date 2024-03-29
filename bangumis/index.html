@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-03-29 15:34:24',
+  postUpdate: '2024-03-29 16:19:24',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -8719,7 +8719,15 @@ queueMicrotask(() => {
     const waline = Waline.init(Object.assign({
       el: '#waline-wrap',
       serverURL: 'waline-1-b4839240.deta.app',
-      pageview: false,
+      emoji: [
+        'https://cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/Sticker-100/',
+        'https://unpkg.com/@waline/emojis@1.2.0/alus',
+        'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+        'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+        'https://unpkg.com/@waline/emojis@1.2.0/qq',
+        'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+        'https://unpkg.com/@waline/emojis@1.2.0/soul-emoji',
+      ],
       dark: 'html[data-theme="dark"]',
       path: window.location.pathname,
       comment: true,
