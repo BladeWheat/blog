@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-04-01 01:32:26',
+  postUpdate: '2024-04-01 02:15:37',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -8718,18 +8718,15 @@ queueMicrotask(() => {
   const initWaline = () => {
     const waline = Waline.init(Object.assign({
       el: '#waline-wrap',
-      serverURL: 'waline-2-b4839240.deta.app',
+      serverURL: 'https://waline-2-b4839240.deta.app/',
       emoji: [
-        'https://cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/Sticker-100/',
-        'https://unpkg.com/@waline/emojis@1.2.0/alus',
-        'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
-        'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
-        'https://unpkg.com/@waline/emojis@1.2.0/qq',
-        'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
-        'https://unpkg.com/@waline/emojis@1.2.0/soul-emoji',
+      'https://cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/Sticker-100/',
+      'https://unpkg.com/@waline/emojis@1.2.0/alus',
+      'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+      'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
+      'https://unpkg.com/@waline/emojis@1.2.0/qq',
       ],
       reaction: true,
-      requiredFields: ['nick', 'mail'],
       dark: 'html[data-theme="dark"]',
       path: window.location.pathname,
       comment: true,
@@ -8795,7 +8792,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('waline-2-b4839240.deta.app/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('https://waline-2-b4839240.deta.app/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {

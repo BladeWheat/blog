@@ -436,7 +436,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('waline-2-b4839240.deta.app/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('https://waline-2-b4839240.deta.app/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {
