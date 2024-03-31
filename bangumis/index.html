@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-04-01 00:15:42',
+  postUpdate: '2024-04-01 01:32:26',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -8718,7 +8718,7 @@ queueMicrotask(() => {
   const initWaline = () => {
     const waline = Waline.init(Object.assign({
       el: '#waline-wrap',
-      serverURL: 'waline-1-b4839240.deta.app',
+      serverURL: 'waline-2-b4839240.deta.app',
       emoji: [
         'https://cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/Sticker-100/',
         'https://unpkg.com/@waline/emojis@1.2.0/alus',
@@ -8795,7 +8795,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('waline-1-b4839240.deta.app/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('waline-2-b4839240.deta.app/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {
